@@ -1,0 +1,52 @@
+ul {
+  padding-left: 0px;
+  margin-top: 0px;
+}
+li {
+  list-style: none;
+  padding: 20px;
+  background: #b7b7ba;
+  border-bottom: 1px solid #fff;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+.item {
+  min-width: 400px;
+  min-height: 335px;
+}
+.booking-list {
+  background: #b7b7ba;
+}
+.floorplan {
+  flex-grow: 2;
+  /* height: calc(100vh - 16px); */
+}
+.floorplan__room {
+  fill: #b7b7ba;
+  opacity: 1;
+  mix-blend-mode: multiply;
+}
+.floorplan__room.active,
+.floorplan__room.active:hover {
+  fill: #96d200;
+}
+.floorplan__room:hover {
+  fill: #1e1546;
+  cursor: pointer;
+}
+li:hover {
+  background: #1e1546;
+  cursor: pointer;
+}
+li.active {
+  background: #96d200;
+}
+@media (max-width: 800px) {
+  .booking-list {
+    order: 2;
+  }
+}
